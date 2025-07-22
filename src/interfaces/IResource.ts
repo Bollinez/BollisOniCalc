@@ -3,8 +3,8 @@ import IGameModeValue from './IGameModeValue';
 import IIO from './IIO';
 import IIOTotal from './IIOTotal';
 
-export type ResourceRate = 'per second' | 'per cycle' | 'per item';
-export type ResourceUnit = 'mg' | 'g' | 'kg' | 'each' | 'kcal';
+export type ResourceRate = 'per second' | 'per cycle' | 'per item' | 'per operation' | 'constant';
+export type ResourceUnit = 'mg' | 'g' | 'kg' | 'each' | 'kcal' | 'radbolts' | 'lux';
 export type ResourceValue = IGameModeValue | number;
 
 export interface IResourceBase {

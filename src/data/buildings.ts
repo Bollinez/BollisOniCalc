@@ -814,4 +814,317 @@ export const buildings: IBuildingBase[] = [
     name: 'Gantry',
     power: { usage: 1200, generation: 0, unit: 'W', rate: 'per second' },
   },
+  {
+    category: 'Refinement',
+    name: 'Bleach Stone Hopper',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Botanical Analyzer',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Refinement',
+    name: 'Brackwax Gleaner',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Brackene', value: 1000, unit: 'g', rate: 'per second' },
+        ],
+        outputs: [
+          { name: 'Brackwax', value: 90, unit: 'g', rate: 'per second' },
+          { name: 'Brine', value: 810, unit: 'g', rate: 'per second' },
+          { name: 'Carbon Dioxide', value: 100, unit: 'g', rate: 'per second' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Shipping',
+    name: 'Conveyor Meter',
+    power: { usage: 10, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Crafting Station',
+    power: { usage: 60, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Data Miner',
+    power: { usage: 1000, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Food',
+    name: 'Deep Fryer',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Refinement',
+    name: 'Diamond Press',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Refined Carbon', value: 100, unit: 'kg', rate: 'per operation' },
+          { name: 'Radbolts', value: 1000, unit: 'radbolts', rate: 'per operation' },
+        ],
+        outputs: [
+          { name: 'Diamond', value: 100, unit: 'kg', rate: 'per operation' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Refinement',
+    name: 'Emulsifier',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Rocketry',
+    name: 'Enclosed Telescope',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Ventilation',
+    name: 'Gas Meter Valve',
+    power: { usage: 10, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Ventilation',
+    name: 'Gas Rocket Port Loader',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Ventilation',
+    name: 'Gas Rocket Port Unloader',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Geotuner',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Rocketry',
+    name: 'Interplanetary Launcher',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Lead Suit Dock',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Plumbing',
+    name: 'Liquid Meter Valve',
+    power: { usage: 10, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Plumbing',
+    name: 'Liquid Rocket Port Loader',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Plumbing',
+    name: 'Liquid Rocket Port Unloader',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Furniture',
+    name: 'Mercury Ceiling Light',
+    power: { usage: 60, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Mercury', value: 130, unit: 'g', rate: 'per second' },
+        ],
+        outputs: [
+          { name: 'Light', value: 60000, unit: 'lux', rate: 'constant' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Rocketry',
+    name: 'Meteor Blaster',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Rocketry',
+    name: 'Mission Control Station',
+    power: { usage: 960, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Rocketry',
+    name: 'Payload Opener',
+    power: { usage: 0, generation: 120, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Power',
+    name: 'Peat Burner',
+    power: { usage: 0, generation: 480, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Peat', value: 1000, unit: 'g', rate: 'per second' },
+        ],
+        outputs: [
+          { name: 'Polluted Water', value: 200, unit: 'g', rate: 'per second' },
+          { name: 'Carbon Dioxide', value: 40, unit: 'g', rate: 'per second' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Power',
+    name: 'Power Bank Charger',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Radiation',
+    name: 'Radbolt Chamber',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Radiation',
+    name: 'Radbolt Generator',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Radiation',
+    name: 'Radiation Lamp',
+    power: { usage: 60, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Uranium Ore', value: 16.7, unit: 'g', rate: 'per second' },
+        ],
+        outputs: [
+          { name: 'Depleted Uranium', value: 8.3, unit: 'g', rate: 'per second' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Food',
+    name: 'Rehydrator',
+    power: { usage: 60, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Water', value: 1, unit: 'kg', rate: 'per operation' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Stations',
+    name: 'Remote Controller',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Remote Worker Dock',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Shearing Station',
+    power: { usage: 60, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Refinement',
+    name: 'Sludge Press',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Mud', value: 150, unit: 'kg', rate: 'per operation' },
+        ],
+        outputs: [
+          { name: 'Dirt', value: 60, unit: 'kg', rate: 'per operation' },
+          { name: 'Water', value: 90, unit: 'kg', rate: 'per operation' },
+        ],
+      },
+      {
+        inputs: [
+          { name: 'Polluted Mud', value: 150, unit: 'kg', rate: 'per operation' },
+        ],
+        outputs: [
+          { name: 'Polluted Dirt', value: 60, unit: 'kg', rate: 'per operation' },
+          { name: 'Polluted Water', value: 90, unit: 'kg', rate: 'per operation' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Stations',
+    name: 'Soldering Station',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Shipping',
+    name: 'Solid Filter',
+    power: { usage: 120, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Shipping',
+    name: 'Solid Rocket Port Loader',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Shipping',
+    name: 'Solid Rocket Port Unloader',
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Stations',
+    name: 'Space Cadet Centrifuge',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Oxygen',
+    name: 'Sublimation Station',
+    power: { usage: 60, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        inputs: [
+          { name: 'Polluted Dirt', value: 1000, unit: 'g', rate: 'per second' },
+        ],
+        outputs: [
+          { name: 'Polluted Oxygen', value: 660, unit: 'g', rate: 'per second' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Furniture',
+    name: 'Sun Lamp',
+    power: { usage: 960, generation: 0, unit: 'W', rate: 'per second' },
+    variants: [
+      {
+        outputs: [
+          { name: 'Light', value: 40000, unit: 'lux', rate: 'constant' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Utilities',
+    name: "Sweepy's Dock",
+    power: { usage: 240, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Rocketry',
+    name: 'Targeting Beacon',
+    power: { usage: 60, generation: 0, unit: 'W', rate: 'per second' },
+  },
+  {
+    category: 'Radiation',
+    name: 'Uranium Centrifuge',
+    power: { usage: 480, generation: 0, unit: 'W', rate: 'per second' },
+  },
 ];
